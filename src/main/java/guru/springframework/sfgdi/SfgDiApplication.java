@@ -15,6 +15,11 @@ public class SfgDiApplication {
         I18nController i18nController = (I18nController) ctx.getBean("i18nController");
         System.out.println(i18nController.sayHello());
 
+
+        System.out.println("----------- i18n second if non profile");
+        I18nControllerSecond i18nControllerSecond = (I18nControllerSecond) ctx.getBean("i18nControllerSecond");
+        System.out.println(i18nControllerSecond.sayHello());
+
         MyController myController = (MyController) ctx.getBean("myController");
 //        String greetingting = myController.sayHello();
 //        System.out.println(greeting);
